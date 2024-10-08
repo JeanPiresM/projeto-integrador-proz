@@ -11,7 +11,7 @@
 <h2>3.  Nome do projeto</h2>
 	<h3>- Divina Taça.</h3>
  
-<h2>4. Breve descrição sobre o projeto
+<h2>4. Breve descrição sobre o projeto<br>
 Os beneficios do vinho, destaques da semana e tipos de vinhos.</h2>
 
 <h2>5. Jornada do usuário (os pelo menos 5 layouts que   serão feitos para entrega no dia 17/10)
