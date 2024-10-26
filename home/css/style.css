@@ -49,6 +49,17 @@ header #logo {
   z-index: 10; /* Certifique-se de que o logo esteja acima da imagem */
 }
 
+header .cadastrar {
+  background-color:rgb(96, 17, 17);
+  padding: 15px 15px 15px 15px;
+  position: absolute;  
+  border-radius: 8%;
+  left: 1090px;
+  right: 265px;
+  font-size:18px;
+  
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -67,16 +78,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/*nav .button {
-  list-style: none;
-  border: solid 10px rgb(164, 101, 103);
-  border-radius: 5px;
-  text-decoration: none;
+h1 {
+  margin: -200px;   
+  position: absolute;
+  left: 850px;
   color: white;
-  margin: 4%;
-  background-color: rgb(154, 77, 81);
-  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
-}*/
+
+}
 
 #img_des {
   height: 300px;
@@ -95,7 +103,7 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente (opcional) */
     padding: 10px; /* Espaçamento interno */
     text-decoration: none; /* Remove o sublinhado */
-    border-radius: 5px; /* Bordas arredondadas (opcional) */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
 p {

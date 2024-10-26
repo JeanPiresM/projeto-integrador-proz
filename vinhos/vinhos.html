@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinhos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#vinhos">Vinhos</a></li>
+            <li><a href="#loja">Loja</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="carousel">
+        <div class="owl-carousel">
+            <div class="item"><h3>Vinho Tinto 1</h3><p>Descrição do Vinho Tinto 1.</p></div>
+            <div class="item"><h3>Vinho Tinto 2</h3><p>Descrição do Vinho Tinto 2.</p></div>
+            <div class="item"><h3>Vinho Branco 1</h3><p>Descrição do Vinho Branco 1.</p></div>
+            <div class="item"><h3>Vinho Branco 2</h3><p>Descrição do Vinho Branco 2.</p></div>
+            <div class="item"><h3>Vinho Rosé 1</h3><p>Descrição do Vinho Rosé 1.</p></div>
+            <div class="item"><h3>Vinho Rosé 2</h3><p>Descrição do Vinho Rosé 2.</p></div>
+            <div class="item"><h3>Vinho Espumante 1</h3><p>Descrição do Vinho Espumante 1.</p></div>
+            <div class="item"><h3>Vinho Espumante 2</h3><p>Descrição do Vinho Espumante 2.</p></div>
+            <div class="item"><h3>Vinho de Sobremesa 1</h3><p>Descrição do Vinho de Sobremesa 1.</p></div>
+            <div class="item"><h3>Vinho de Sobremesa 2</h3><p>Descrição do Vinho de Sobremesa 2.</p></div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Vinhos. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+            autoplay: true,
+            loop: true,
+            nav: true,
+            dots: true
+        });
+    });
+</script>
+</body>
+</html>
