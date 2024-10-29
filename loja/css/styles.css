@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  font-family: "Maven Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #993b3b;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+header {
+    background-color: #4A4A4A;
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.produto-grid {
+    
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 250px;
+}
+
+.produto {
+    height: 30%;
+    margin-top: 50%;   
+    flex-direction:unset;
+    justify-content: space-between;
+    margin-top: 20%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.produto button {
+    background-color: #4A4A4A;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.produto button:hover {
+    background-color: #333;
+}
+
+.produto .divina_home {
+    height: 50%;
+}

@@ -27,17 +27,16 @@ header {
 header button {
   color: aliceblue;
   text-decoration: none;
-
 }
 
 header .button {
   padding: 15px 15px 15px 15px;
-  position: absolute;  
-  background-color: rgb(96, 17, 17) ;
+  position: absolute;
+  background-color: #5b0505;
   border-radius: 8%;
   left: 1255px;
   right: 100px;
-  font-size:18px;
+  font-size: 18px;
 }
 
 header #logo {
@@ -50,24 +49,35 @@ header #logo {
 }
 
 header .cadastrar {
-  background-color:rgb(96, 17, 17);
+  background-color: #5b0505;
   padding: 15px 15px 15px 15px;
-  position: absolute;  
+  position: absolute;
   border-radius: 8%;
   left: 1090px;
   right: 265px;
-  font-size:18px;
-  
+  font-size: 18px;
 }
 
 nav {
+  gap: 10%;
   display: flex;
   justify-content: center;
-  background-color: #8b0000;
+  background-color: #5b0505;
   padding: 35px;
   border-radius: 50px;
   margin: 60px;
 }
+
+nav :hover {
+  text-decoration: none;
+  background-color: black;
+  border-radius: 10%;
+}
+
+nav li {
+  list-style-type: none;
+}
+
 nav a {
   color: white;
   text-decoration: none;
@@ -79,115 +89,192 @@ nav a:hover {
 }
 
 h1 {
-  margin: -200px;   
+  margin: -220px;
   position: absolute;
+  justify-content: center;
   left: 850px;
   color: white;
-
 }
 
-#img_des {
-  height: 300px;
+header #img_des {
+  margin-top: -17%;
+  padding: 80px 130px;
+  height: 350px;
   width: 250px;
-  position: relative;
   display: inline-block; /* Para que a div se ajuste ao tamanho da imagem */
-
-}
-.overlay {
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta para centralizar perfeitamente */
-    color: white; /* Cor do texto */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente (opcional) */
-    padding: 10px; /* Espaçamento interno */
-    text-decoration: none; /* Remove o sublinhado */
-    border-radius: 5px; /* Bordas arredondadas */
 }
 
-p {
-  float: left;
-  padding: 10px 10px 10px 10px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-h3,
 p {
   color: white;
-  text-align:center;
+  margin-top: 0%;
+  float: left;
+  text-align: justify;
+  font-size: 20px;
+  padding: 20px 100px 20px 200px;
 }
-.container img {
-  width: 30%;
-  border-radius: 8px;
+
+h2 {
+  text-decoration: none;
+  padding: 80px 80px 80px 80px;
+  margin: 5%;
 }
-.container .content {
-  width: 65%;
-  padding: 0 20px;
+
+h2 a {
+  color: white;
+  margin: -4%;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+
+  margin-top: 0%;
+  text-decoration: none;
 }
-.highlight {
+
+h2 #img_des {
+  margin-left: 10%;
+  margin-right: auto;
+  display: block;
+  margin-top: 0%;
+  height: 350px;
+  width: 250px;
+}
+
+h2 #img_des_2 {
+  position: relative;
+  border-radius: 3%;
+  margin-left: 40%;
+  margin-right: auto;
+  display: block;
+  margin-top: -34%;
+  height: 350px;
+  width: 250px;
+}
+
+h2 #img_des_3 {
+  margin-left: 70%;
+  
+  margin-right: auto;
+  display: block;
+  margin-top: -34%;
+  height: 350px;
+  width: 250px;
+}
+
+section h3 {
   text-align: center;
-  margin: 20px 0;
-  font-size: 24px;
-  color: #8b0000;
+  color: white;
+  margin-top: 0%;
+  font-size: 28px;
+  display: block;
+  margin: 2%;
+  border-radius:30%;
+  padding: 20px 20px 20px 20px;
+  background-color: #5b0505;
+
 }
 
 footer {
   text-align: center;
   margin-top: 40px;
-  
 }
 
 footer .outras_info {
-  display: grid;
+  margin-top: 2%;
+  
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* Espaçamento entre os itens */
-  background-color: rgb(153, 46, 46);
-  text-decoration: none;  
-  border-radius: 3%;
+  gap: 30px; /* Espaçamento entre os itens */
+  
+  text-decoration: none;
+  border-radius: 30%;
   justify-content: space-evenly;
-  margin-top: 50px;
-  padding: 10px 20px 10px 10px; 
-   
+  width: 100%;
+  height: 150%;
+
+  
+    
 }
 
 footer #footer {
-  color: white; 
-  background-color: #5b0505; 
+  margin-top: 5%;
+  color: white;
+  background-color: #5b0505;
   display: contents;
-   
- 
+}
+
+footer #siga {
+  text-decoration: none;
+  pointer-events: none;
 }
 
 .item {
-  padding: 10px; /* Opcional: adiciona padding aos itens */
+  width: 30%;
+  height: 30%;
+  padding: 30px 30px 30px 50px; /* Opcional: adiciona padding aos itens */
   box-sizing: border-box;
   color: aliceblue;
-  text-decoration: none
-
+  text-decoration: none;
 }
 
-#rodape .titulo{ color: #FF4DFF; font-size: 16px; }
+#rodape .titulo {
+  color: #ff4dff;
+  font-size: 16px;
+}
 
 .redes_sociais {
-  margin: 20%;
-  background-color: rgb(141, 151, 160);
-  
+  margin-top: 30%;
+  border-radius: 30px;
+  display: flex;
+  background-color: antiquewhite;
   font-size: 18px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   justify-content: space-evenly;
-  
 }
 
 img {
   max-width: 1400px;
   max-height: 500px;
-  width: auto;
-  height: auto;
+  /*width: auto;
+  height: auto;*/
   padding-top: 60px;
 }
 
+/* Estilos básicos para o pop-up */
+#popup {
+  
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  padding: 40px;
+  background-color: white;
+  border: 4px solid #5b0505;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+#popup button {
+  
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: #8b0000;
+  cursor: pointer;
+}
+#popup button:hover {
+  background-color: #a52a2a;
+}
+#popup label {
+  
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+#popup input[type="checkbox"] {
+  margin-right: 8px;
+  
+}
