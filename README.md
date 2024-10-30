@@ -1,5 +1,7 @@
-<h1>projeto-integrador-proz:</h1>
 
+<h1>projeto-integrador-proz:</h1>
+<h2>Integrantes do Grupo: Mauricio, Jean Pires, Sabrina Vieira, Dayane Emanuele <h2>
+	
 <h2>Sprint 1 - Layout:</h2>
 
 <h2>1. Tema do projeto:</h2>
