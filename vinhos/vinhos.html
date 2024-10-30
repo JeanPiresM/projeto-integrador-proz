@@ -75,13 +75,23 @@
             <p>Descrição do Vinho de Sobremesa 2.</p>
           </div>
         </div>
-      </section>
-    </main>
+    </section>
+</main>
 
-    <footer>
-      <p>&copy; 2024 Vinhos. Todos os direitos reservados.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Vinhos. Todos os direitos reservados.</p>
+</footer>
 
-    <script src="script/script.js"></script>
-  </body>
+<script>
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+            autoplay: true,
+            loop: true,
+            nav: true,
+            dots: true
+        });
+    });
+</script>
+</body>
 </html>
