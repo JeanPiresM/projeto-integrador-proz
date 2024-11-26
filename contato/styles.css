@@ -7,49 +7,50 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
   padding: 20px;
   background-color: #993b3b;
 }
 
 header {
-    text-align: center;
-    gap: 10%;
-    display: flex;
-    justify-content: center;
-    background-color: #8b0000;
-    padding: 35px;
-    border-radius: 50px;
-    margin: 60px;
-    list-style-type: none
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8b0000;
+  padding: 35px;
+  border-radius: 50px;
+  margin-bottom: 60px;
+  list-style-type: none;
 }
 
 nav {
-  text-align: center;
-  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
+
 nav a {
-  text-align: center;
-  justify-content: center;
-  margin: 0 15px;
   color: #fff;
   text-decoration: none;
 }
+
 form {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 input,
 textarea {
-  width: 100%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 button {
   background: #5cb85c;
   color: white;
@@ -57,7 +58,9 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 button:hover {
   background: #4cae4c;
 }
