@@ -11,47 +11,140 @@ body {
 }
 
 header {
-    justify-content: space-evenly;
-    gap: 30px;
-    margin: 20px;
-    /*background-image: url("caminho_da_imagem_do_cabecalho.jpg");*/
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
+  margin: 20px;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
 
-header #img_inferior {
-    left: 100px;
-    height: 40%;
-    width: 80%;
-    right: 50%;
-    justify-content: center;
-    position: absolute;
-    margin-top: 50px;
-    padding: 500px 20px 20px 20px; 
+header button {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+header .login {
+  padding: 10px 10px 10px 10px;
+  position: absolute;
+  background-color: #5b0505;
+  border-radius: 10%;
+  left: 1030px;
+  font-size: 18px;
+  width: 10%;
+}
+
+header #logo {
+  position: absolute;
+  top: 75px; /* Distância do topo */
+  left: 100px; /* Distância da esquerda */
+  width: 400px; /* Largura do logo */
+  height: auto; /* Manter a proporção do logo */
+  z-index: 10; /* Certifique-se de que o logo esteja acima da imagem */
+}
+
+header .cadastrar {
+  background-color: #5b0505;
+  padding: 10px 10px 10px 10px;
+  position: absolute;
+  border-radius: 10%;
+  left: 890px;
+  right: 265px;
+  font-size: 18px;
+  width: 10%;
+}
+
+img {
+  max-width: 1100px;
+  max-height: 400px;
+  /*width: auto;
+  height: auto;*/
+  
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #8b0000;
-    padding: 35px;
-    border-radius: 50px;
-    margin: 60px;
-  }
+  gap: 10%;
+  display: flex;
+  justify-content: center;
+  background-color: #5b0505;
+  padding: 35px;
+  border-radius: 50px;
+  margin: 60px;
+  text-decoration: none;
+}
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
+nav.Menu li :hover {
+  color: rgb(158, 47, 47);
+}
+
+nav.Menu {
+  list-style-type: none;
+}
+
+nav.Menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 30px;
+  max-width: 900px;
+  margin: 0 auto 0 auto;
+}
+
+h1 {
+  margin: -230px;
+  position: absolute;
+  justify-content: center;
+  left: 700px;
+  color: white;
+}
+
+h2 {
+  color: white;
+  margin-top: 2%;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.item {
+  color: white;
+}
+
+#vn_vinhos {
+  display: flex;
+  gap: 30px;
+}
+
+#vn_vinhos div {
+  background-color: white;
+  padding: 20px 30px 20px 30px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+div p {
+  margin: 1%;
+  margin-bottom: 10%;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.divina_home {
+  width: 200px!important;
+  height: 200px!important;
+}
+
+header #img_des {
+  margin-top: -17%;
+  padding: 80px 130px;
+  height: 350px;
+  width: 250px;
+  display: inline-block; /* Para que a div se ajuste ao tamanho da imagem */
+}
   
-
 .image-container {
     position: relative;
     display: inline-block; /* Para ajustar o contêiner ao tamanho da imagem */
@@ -76,11 +169,9 @@ nav {
     font-size: 16px; /* Tamanho da fonte (opcional) */
 }
 
-footer {
- 
-  
-  color: aliceblue;
-  
-  margin: inherit;
+footer { 
+  margin-top: 10%;
+  color: aliceblue;  
+  text-align: center;
  
 }

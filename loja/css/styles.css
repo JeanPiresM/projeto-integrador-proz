@@ -1,92 +1,255 @@
-*,
-*::before,
-*::after {
-  font-family: "Maven Pro", sans-serif;
+/* Reset de estilo */
+* {
   margin: 0;
+  font-family: "Maven Pro", sans-serif;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #993b3b;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    
-  }
+  background-color: #993b3b;
+  font-family: 'Maven Pro', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
 
 header {
-    background-color: #4A4A4A;
-    color: white;
-    padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
+header img {
+  max-width: 1100px;
+  max-height: 400px;
+  /* max-width: 100%; */
+  height: auto;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+#logo {
+  margin-right: 64%;
+  margin-top: -23%;
+  margin-bottom: 5%;
+  max-width: 350px;
 }
 
-.cart-button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 18px;
+header h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+h2 {
+  color: white;
+}
+
+nav.Menu {
+  list-style-type: none;
+  width: 100%;
+  border-radius: 50px;
+  padding: 35px;  
+  background-color: #5b0505 ;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 20px;
+}
+
+nav.Menu li :hover {
+  
+  color: rgb(158, 47, 47);
+  list-style-type: none;
+  text-decoration: none;
+}
+
+select#tipo-vinho{
+  justify-content: space-between;
+}
+
+nav.Menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+
+button.car_button  {
+  border-radius: 30%;
+  display: block;
+  margin-top: -207%;
+  margin-left: 1029%;  
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+button.car_button:hover {
+  background-color: #972727;
+  /* color: rgb(158, 47, 47); */  
+  
 }
 
 main {
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+    padding-top: 50px;
+    max-width: 1100px;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    background-color: #5b0505;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+form {
+  color: white;
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-left: -63%;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-top: 20%;
+  margin-left: -64%;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  margin-left: 185%;
+  margin-top: 25%;
+  width: 70%;
+  height:70%;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
 }
 
 .produto-grid {
-    
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 250px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 100px;
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 5%;
 }
 
 .produto {
-    height: 30%;
-    margin-top: 50%;   
-    flex-direction:unset;
-    justify-content: space-between;
-    margin-top: 20%;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px 10px 10px 10px;
-    text-align: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+  max-width: 50%;
+  height: auto;
+  
+}
+
+.produto h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.produto p {
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 .produto button {
-    background-color: #4A4A4A;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
 }
 
 .produto button:hover {
-    background-color: #333;
+  background-color: #555;
 }
 
-.produto .divina_home {
-    height: 50%;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.Menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .produto-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav.Menu {
+    gap: 10px;
+  }
+
+  .produto-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer { 
+  margin-top: 10%;
+  color: aliceblue;  
+  text-align: center;
+ 
 }

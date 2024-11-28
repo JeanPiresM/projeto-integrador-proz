@@ -28,9 +28,6 @@ element{
 
 }
 
-
-
-
 img{
     width:150px;
     position: center;
@@ -39,8 +36,8 @@ img{
 
 }
 
-
 form {
+    color: white;
     width: 300px;
     margin: 0 auto;
     padding: 20px;
@@ -49,6 +46,7 @@ form {
     border-radius: 10px;
    
 }
+
 
 label {
     display: block;
