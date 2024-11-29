@@ -1,0 +1,187 @@
+/* Estilos gerais */
+body {
+  background-color: #C3272B;
+  color: #FFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Barra de progresso */
+.progress-bar {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.progress-step {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #D93F3A;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.progress-step.active {
+  background-color: #FFF;
+  color: #C3272B;
+}
+
+/* Container principal */
+.main-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Formulário de dados pessoais */
+.form-container {
+  background-color: #D93F3A;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.form-container h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 95%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Carrinho de compras */
+.cart-container {
+  background-color: #D93F3A;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.cart-container h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #B22326;
+  border-radius: 5px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.item-image {
+  width: 50px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.item-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.item-price {
+  font-size: 13px;
+  color: #eee;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-selector button {
+  background-color: #333;
+  color: #FFF;
+  border: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.quantity-selector input {
+  width: 30px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  color: #FFF;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.coupon-section {
+  margin-top: 20px;
+}
+
+.coupon-section input {
+  width: 95%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.btn-finish {
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-finish:hover {
+  background-color: #333;
+}

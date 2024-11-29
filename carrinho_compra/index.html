@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Checkout - Divina Taça</title>
   <link rel="stylesheet" href="css/styles.css" /> 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,8 +14,8 @@
     /> 
 </head>
 
-<body>
 
+<body>
   <!-- Barra de Progresso -->
   <div class="progress-bar">
     <div class="progress-step active">1. Carrinho</div>
@@ -27,39 +28,46 @@
 
   <!-- Container Principal -->
   <div class="main-container">
-    
     <!-- Formulário de Dados Pessoais -->
     <div class="form-container">
       <h2>Dados Pessoais</h2>
+
       <form>
         <div class="form-group">
           <label for="email">E-mail:</label>
           <input type="email" id="email" name="email" required>
         </div>
+
         <div class="form-group">
           <label for="firstName">Primeiro Nome:</label>
           <input type="text" id="firstName" name="firstName" required>
         </div>
+
         <div class="form-group">
           <label for="lastName">Último Nome:</label>
           <input type="text" id="lastName" name="lastName" required>
         </div>
+
         <div class="form-group">
           <label for="cpf">CPF:</label>
           <input type="text" id="cpf" name="cpf" placeholder="999.999.999-99" required>
         </div>
+
         <div class="form-group">
           <label for="phone">Telefone:</label>
           <input type="tel" id="phone" name="phone" placeholder="11 99999-9999" required>
         </div>
+
         <div class="form-group">
           <label for="password">Digite sua senha:</label>
           <input type="password" id="password" name="password" required>
         </div>
+
         <div class="form-group">
           <label for="confirmPassword">Confirme sua senha:</label>
           <input type="password" id="confirmPassword" name="confirmPassword" required>
         </div>
+
         <div class="form-group">
           <button type="submit">Enviar</button>
         </div>
@@ -98,13 +106,13 @@
 
         </div>
 
-  
-
       <!-- Total e Cupom -->
       <div class="cart-total">VALOR TOTAL: R$ 449,70</div>
+
       <div class="coupon-section">
         <input type="text" placeholder="Inserir cupom">
       </div>
+
       <button class="btn-finish">Finalizar Compra</button>
     </div>
   </div>
@@ -123,7 +131,6 @@
       }
     }
   </script>
-
 </body>
+
 </html>
-         
