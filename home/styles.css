@@ -64,7 +64,7 @@ nav {
   width: 100%;
 }
 
-nav li {
+nav li a {
   list-style-type: none;
 }
 
@@ -76,20 +76,9 @@ nav a {
 }
 
 nav a:hover {
+  text-decoration: none;
+  list-style-type: none;
   text-decoration: underline;
-}
-
-.sub-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 90%;
-  width: 100%;
-  margin: 0 auto;
-}
-
-h1 {
-  color: white;
 }
 
 #img_des {
@@ -121,18 +110,9 @@ p {
 
 h3,
 p {
+  display: flex;
   color: white;
   text-align: center;
-}
-
-.container img {
-  width: 30%;
-  border-radius: 8px;
-}
-
-.container .content {
-  width: 65%;
-  padding: 0 20px;
 }
 
 section h3 {
@@ -145,7 +125,7 @@ section h3 {
   background-color: #5b0505;
   max-width: 95%;
   width: 100%;
-  margin: 0 auto 2%;
+  margin: 5 auto 2%;
 }
 
 footer {

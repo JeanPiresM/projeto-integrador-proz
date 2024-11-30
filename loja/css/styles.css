@@ -28,6 +28,7 @@ header div {
 }
 
 header img {
+  margin-bottom: 2%;
   max-width: 1100px;
   max-height: 400px;
   /* max-width: 100%; */
@@ -51,6 +52,9 @@ h2 {
   color: white;
 }
 
+h3 {
+  margin-top: 5%;
+}
 nav.Menu {
   list-style-type: none;
   width: 100%;
@@ -70,16 +74,16 @@ nav.Menu li :hover {
   text-decoration: none;
 }
 
-select#tipo-vinho{
-  justify-content: space-between;
-}
-
 nav.Menu a {
   text-decoration: none;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
   
+}
+
+select#tipo-vinho{
+  justify-content: space-between;
 }
 
 button.car_button  {

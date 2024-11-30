@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Cabeçalho com imagem -->
-    <header>
-      <!-- Imagem vinho -->
 
-      <img src="img/Rectangle 1.png" alt="Imagem de Vinho" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <meta http-equiv="x-UA-compatible" content="IE=edge" />
+  <link rel="stylesheet" href="/contato/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img src="img/Rectangle 1.png" alt="Imagem de Vinho" />
       <img id="logo" src="img/Logo_1610.png 2.png" alt="Logo" />
-      <!-- <button class="login" type="submit">LOGIN</button> -->
-      <!-- <button class="cadastrar" type="submit">CADASTRAR</button> -->
-    </header>
+    <!--   <button class="login" type="submit">LOGIN</button>
+      <button class="cadastrar" type="submit">CADASTRAR</button> -->
+  </header>
 
-    <!-- Menu de navegação -->
-    <nav class="Menu">
-      <li><a href="/home/home.html">HOME</a></li>
-      <li><a href="/vinhos/vinhos.html">VINHOS</a></li>
-      <li><a href="/loja/loja.html">LOJA</a></li>
-      <li><a href="/eventos/eventos.html">EVENTOS</a></li>
-      <li><a href="/contato/contato.html">CONTATO</a></li>
-    </nav>
+  <nav class="Menu">
+    <li><a href="/home/home.html">HOME</a></li>
+    <li><a href="/vinhos/vinhos.html">VINHOS</a></li>
+    <li><a href="/loja/loja.html">LOJA</a></li>
+    <li><a href="/eventos/eventos.html">EVENTOS</a></li>
+    <li><a href="/contato/contato.html">CONTATO</a></li>
+  </nav>
 
-    <main>
-      <h1>DIVINA TAÇA</h1>
-      <h2>Contato</h2>
-      <form action="#" method="post">
-        <label for="nome"><strong>Nome Completo:</strong></label>
-        <input type="text" id="nome" name="nome" required />
+  <main>
+    <h2>Contato</h2>
 
-        <label for="telefone"><strong>Telefone:</strong></label>
-        <input type="tel" id="telefone" name="telefone" required placeholder="11 9 9999-9999"/>
+    <form action="#" method="post">
+      <label for="nome"><strong>Nome Completo:</strong> </label>
+      <input type="text" id="nome" name="nome" required />
 
-        <label for="email"><strong>E-mail:</strong></label>
-        <input type="email" id="email" name="email" required placeholder="email@email.com.br" />
+      <label for="telefone"><strong>Telefone:</strong></label>
+      <input type="tel" id="telefone" name="telefone" required />
 
-        <label for="assunto"><strong>Assunto:</strong></label>
-        <input type="text" id="assunto" name="assunto" required />
+      <label for="email"><strong>E-mail:</strong></label>
+      <input type="email" id="email" name="email" required />
 
-        <label for="mensage"><strong>Mensagem*:</strong></label>
-        <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Até 200 caracteres:"></textarea>
-        
-        <button type="submit">Enviar</button>
-      </form>
-    </main>
-  </body>
+      <label for="assunto"><strong>Assunto:</strong></label>
+      <input type="text" id="assunto" name="assunto" required />
+
+      <label for="mensagem"><strong>Mensagem:</strong></label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+
 </html>
