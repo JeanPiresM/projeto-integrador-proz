@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DIVINA TAÇA</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="/home/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,13 +17,28 @@
   <body>
     <!-- Cabeçalho com imagem -->
     <header>
-      <!-- Imagem vinho -->
-
       <img src="img/Rectangle 1.png" alt="Imagem de Vinho" />
       <img id="logo" src="img/Logo_1610.png 2.png" alt="Logo" />
-      <button class="login" type="submit">LOGIN</button>
-      <button class="cadastrar" type="submit">CADASTRAR</button>
     </header>
+
+    <div class="container">
+      <!-- Botão Entrar -->
+      <button class="entrar-btn" id="entrarBtn">Entrar</button>
+
+      <!-- Menu de opções -->
+      <div class="opcoes-menu" id="opcoesMenu">
+        <label for="entrar-opcao">Escolha uma opção para entrar:</label>
+        <button class="opcao-btn" id="opcao1">Receber código por e-mail</button>
+        <button class="opcao-btn" id="opcao2" 
+        onclick="window.location.href='/form_login/login.html'">
+        Entrar com e-mail e senha
+        </button>
+        <button class="opcao-btn" id="opcao3">
+          <img id="icon_google" src="img/icon_google.png" alt="Logo_Google"> 
+          Entrar com Google
+        </button>
+      </div>
+    </div>
 
     <!-- Menu de navegação -->
     <nav class="Menu">
@@ -34,9 +50,9 @@
     </nav>
 
     <main>
-        <h2>
+      <h2>
         <a href="des_semana">Destaques da Semana:</a>
-        <img id="img_des" src="img/destaque.png" />
+        <img id="img_des" src="/home/img/Gemini_divina.png" />
         <img id="img_des_2" src="img/divina_home.png" />
         <img id="img_des_3" src="img/divina_home_1.png" />
       </h2>
@@ -51,7 +67,7 @@
         </div>
 
         <div>
-          <p>
+          <p class="textos">
             Uma das curiosidades sobre o vinho é que ele pode expressar as
             características do solo e do clima em que as uvas são cultivadas,
             tornando cada garrafa única. Outro fato interessante é que o vinho
@@ -60,13 +76,13 @@
           </p>
         </div>
 
-        <div>
+        <div class="textos">
           <p>
             O vinho é uma bebida alcoólica que resulta da fermentação do sumo de
             uva;  É constituído por água (80 a 85% do volume), carboidratos,
             vitaminas e minerais;  Benefícios para a saúde; O vinho é rico em
             polifenóis, compostos nutricionais que podem ajudar a reduzir a
-            deposição de colesterol e placas de gordura nas artérias;
+            deposição de colesterol e placas de gordura nas artérias.
           </p>
         </div>
       </section>
@@ -86,6 +102,9 @@
     <!-- Links para redes sociais -->
     <footer>
       <div class="redes_sociais">
+        <img id="Icon_face" src="img/face.png" alt="Icon Facebook" />
+        <img id="Icon_Instagram" src="img/instagram.png" alt="Icon Instagram" />
+        <img id="Icon_twitter" src="img/twitter.png" alt="Icon Facebook" />
         <a href="#" id="siga" target="_blank">Siga-nos nas redes sociais: </a>
         <a href="https://facebook.com" target="_blank">Facebook</a>
         <a href="https://instagram.com" target="_blank">Instagram</a>
@@ -93,7 +112,7 @@
       </div>
 
       <div class="outras_info">
-        <a href="#inf_contato" class="item">Informações de Contato</a>
+        <a href="#inf_contato" class="item">11 9 9999-9999</a>
         <a href="#assinatura_Newsletter" class="item"
           >Assinatura de Newsletter</a
         >
@@ -114,9 +133,10 @@
       </div>
 
       <div id="copyright" class="clr">
-        Copyright Divina Taça 2024 - Todos os Direitos Reservados</div>
+        Copyright Divina Taça 2024 - Todos os Direitos Reservados
+      </div>
     </footer>
 
-    <script src="script/script.js"></script>
+    
   </body>
 </html>

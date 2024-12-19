@@ -1,136 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Checkout - Divina Taça</title>
-  <link rel="stylesheet" href="css/styles.css" /> 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Divina Taça</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="/carrinho_compra/script/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
       rel="stylesheet"
-    /> 
-</head>
+    />
+  </head>
 
-
-<body>
-  <!-- Barra de Progresso -->
-  <div class="progress-bar">
-    <div class="progress-step active">1. Carrinho</div>
-    <div class="progress-step">2. Identificação</div>
-    <div class="progress-step">3. Pagamento</div>
-    <div class="progress-step">4. Confirmação</div>
-    <a class="inicio" href="/loja/loja.html">Voltar</a>
-
-  </div>
-
-  <!-- Container Principal -->
-  <div class="main-container">
-    <!-- Formulário de Dados Pessoais -->
-    <div class="form-container">
-      <h2>Dados Pessoais</h2>
-
-      <form>
-        <div class="form-group">
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="firstName">Primeiro Nome:</label>
-          <input type="text" id="firstName" name="firstName" required>
-        </div>
-
-        <div class="form-group">
-          <label for="lastName">Último Nome:</label>
-          <input type="text" id="lastName" name="lastName" required>
-        </div>
-
-        <div class="form-group">
-          <label for="cpf">CPF:</label>
-          <input type="text" id="cpf" name="cpf" placeholder="999.999.999-99" required>
-        </div>
-
-        <div class="form-group">
-          <label for="phone">Telefone:</label>
-          <input type="tel" id="phone" name="phone" placeholder="11 99999-9999" required>
-        </div>
-
-        <div class="form-group">
-          <label for="password">Digite sua senha:</label>
-          <input type="password" id="password" name="password" required>
-        </div>
-
-        <div class="form-group">
-          <label for="confirmPassword">Confirme sua senha:</label>
-          <input type="password" id="confirmPassword" name="confirmPassword" required>
-        </div>
-
-        <div class="form-group">
-          <button type="submit">Enviar</button>
-        </div>
-      </form>
+  <body>
+    <!-- Barra de Progresso -->
+    <div class="progress-bar">
+      <div class="progress-step active">1. Carrinho</div>
+      <div class="progress-step">2. Identificação</div>
+      <div class="progress-step">3. Pagamento</div>
+      <div class="progress-step">4. Confirmação</div>
+      <a class="inicio" href="/loja/loja.html">Voltar</a>
     </div>
 
-    <!-- Carrinho de Compras -->
-    <div class="cart-container">
-        <h2>Carrinho</h2>
-        <div class="cart-item">
-          <img src="/loja/img/divina_home.png" alt="Imagem do Produto" class="item-image">
-            <span>Vinho Tinto - R$ 149,90</span>
+    <!-- Container Principal -->
+    <div class="main-container">
+      <!-- Formulário de Dados Pessoais -->
+      <div class="form-container">
+        <h2>Dados Pessoais</h2>
+
+        <form>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
           </div>
-          <div class="quantity-selector">
-            <button onclick="decreaseQuantity(1)">-</button>
-            <input type="text" id="quantity-1" value="1" readonly>
-            <button onclick="increaseQuantity(1)">+</button>
-        </div>
-        <div class="cart-item">
-          <img src="/loja/img/divina_home_1.png" alt="Imagem do Produto" class="item-image">
-            <span>Vinho Branco - R$ 149,90</span>
-            </div>
-            <div class="quantity-selector">
-              <button onclick="decreaseQuantity(1)">-</button>
-              <input type="text" id="quantity-1" value="1" readonly>
-              <button onclick="increaseQuantity(1)">+</button>
-        </div>
-        <div class="cart-item">
-          <img src="/loja/img/Maleza_0510 (2).png" alt="Imagem do Produto" class="item-image">
-            <span>Vinho Rosé - R$ 149,90</span>
+
+          <div class="form-group">
+            <label for="firstName">Primeiro Nome:</label>
+            <input type="text" id="firstName" name="firstName" required />
           </div>
-          <div class="quantity-selector">
-            <button onclick="decreaseQuantity(1)">-</button>
-            <input type="text" id="quantity-1" value="1" readonly>
-            <button onclick="increaseQuantity(1)">+</button>
 
-        </div>
+          <div class="form-group">
+            <label for="lastName">Último Nome:</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
 
-      <!-- Total e Cupom -->
-      <div class="cart-total">VALOR TOTAL: R$ 449,70</div>
+          <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              placeholder="999.999.999-99"
+              required
+            />
+          </div>
 
-      <div class="coupon-section">
-        <input type="text" placeholder="Inserir cupom">
+          <div class="form-group">
+            <label for="phone">Telefone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="11 99999-9999"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Digite sua senha:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirme sua senha:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
       </div>
 
-      <button class="btn-finish">Finalizar Compra</button>
+      <!-- Carrinho de Compras -->
+      <div class="cart-container">
+        <h2>Carrinho</h2>
+        <div class="cart-item">
+          <img
+            src="/loja/img/divina_home.png"
+            alt="Imagem do Produto"
+            class="item-image"
+          />
+          <span>Vinho Tinto - R$ 149,90</span>
+        </div>
+        <div class="quantity-selector">
+          <button onclick="decreaseQuantity(1)">-</button>
+          <input type="text" id="quantity-1" value="1" readonly />
+          <button onclick="increaseQuantity(1)">+</button>
+        </div>
+        <div class="cart-item">
+          <img
+            src="/loja/img/divina_home_1.png"
+            alt="Imagem do Produto"
+            class="item-image"
+          />
+          <span>Vinho Branco - R$ 149,90</span>
+        </div>
+        <div class="quantity-selector">
+          <button onclick="decreaseQuantity(1)">-</button>
+          <input type="text" id="quantity-1" value="1" readonly />
+          <button onclick="increaseQuantity(1)">+</button>
+        </div>
+        <div class="cart-item">
+          <img
+            src="/loja/img/Maleza_0510 (2).png"
+            alt="Imagem do Produto"
+            class="item-image"
+          />
+          <span>Vinho Rosé - R$ 149,90</span>
+        </div>
+        <div class="quantity-selector">
+          <button onclick="decreaseQuantity(1)">-</button>
+          <input type="text" id="quantity-1" value="1" readonly />
+          <button onclick="increaseQuantity(1)">+</button>
+        </div>
+
+        <!-- Total e Cupom -->
+        <div class="cep-section">
+          <!-- <span>CEP:</span> -->
+          <input type="text" id="cep" maxlength="9" onkeyup="handleZipCode(event)" placeholder="Inserir CEP" />
+          <button class="btn-Calcula">Calcular</button>
+        </div>
+
+        <div class="cart-total">VALOR TOTAL: R$ 449,70</div>
+
+        <div class="coupon-section">
+          <input type="text" placeholder="Inserir cupom" />
+        </div>
+
+        <button class="btn-finish">Finalizar Compra</button>
+      </div>
     </div>
-  </div>
-
-  <script>
-    // Funções para alterar quantidade
-    function increaseQuantity(itemId) {
-      let quantityInput = document.getElementById('quantity-' + itemId);
-      quantityInput.value = parseInt(quantityInput.value) + 1;
-    }
-
-    function decreaseQuantity(itemId) {
-      let quantityInput = document.getElementById('quantity-' + itemId);
-      if (parseInt(quantityInput.value) > 1) {
-        quantityInput.value = parseInt(quantityInput.value) - 1;
-      }
-    }
-  </script>
-</body>
-
+  </body>
 </html>

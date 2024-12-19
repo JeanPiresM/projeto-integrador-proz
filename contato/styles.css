@@ -6,11 +6,19 @@
   padding: 0;
 }
 
-body {
+/* body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
   background-color: #993b3b;
+} */
+
+body {
+  height: 100vh; /* Para garantir que ocupe toda a altura da tela */
+  background: linear-gradient(to bottom, #993b3b 75.6%, aliceblue 0%);
+}
+
+html {
+  background: aliceblue;
 }
 
 header {
@@ -60,7 +68,6 @@ img {
   max-height: 400px;
   /*width: auto;
   height: auto;*/
-  
 }
 
 nav {
@@ -71,10 +78,9 @@ nav {
   justify-content: space-evenly;
   background-color: #5b0505;
   padding: 35px 0;
-  border-radius: 50px;
-  margin: 5px auto 0;
-  max-width: 95%;
-  width: 100%;
+  /* border-radius: 50px; */
+  margin: 2px auto 0;
+  width: 91%;
 }
 
 nav li a {
@@ -82,14 +88,14 @@ nav li a {
 }
 
 nav a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 18px;
   transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color:  #993b3b;
+  color: #993b3b;
   text-decoration: none;
   list-style-type: none;
   text-decoration: none;
@@ -105,19 +111,19 @@ h1 {
 
 h2 {
   margin-top: 5%;
-  color: white;
+  color: #5b0505;
   margin-left: 46%;
-  margin-bottom: 1%;
   align-items: center;
 }
 
 form {
   margin-left: 20%;
   width: 712px;
-  background: #fff;
+  background: #5b0505;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5%;
 }
 input,
 textarea {
@@ -126,6 +132,10 @@ textarea {
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+label {
+  color: white;
 }
 
 button {
@@ -139,5 +149,5 @@ button {
   cursor: pointer;
 }
 button:hover {
-    background: #3fa728;
+  background: #3fa728;
 }

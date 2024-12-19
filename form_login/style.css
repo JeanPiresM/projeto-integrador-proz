@@ -1,85 +1,149 @@
-*, *::before, *::after {
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;    
+*,
+*::before,
+*::after {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
-body{
-    display: flex;
-    place-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: #f05050; 
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    color: white; 
-
+body {
+  display: flex;
+  place-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #993b3b;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: white;
 }
 
-element{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
+/* element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+} */
 
+img {
+  width: 80%;
+  align-items: center;
+  position: center;
+  border-radius: 10px;
+  margin: 10%;
 }
 
-img{
-    width:150px;
-    position: center;
-    border-radius: 10px;
-    margin: 75px;
-
+form#login {
+  display: grid;
+  position: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #9a9797;
+  background-color: #5b0505;
+  border-radius: 10px;
 }
-
-form {
-    color: white;
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ff0b0b;
-    background-color: rgb(226, 18, 18);
-    border-radius: 10px;
-   
-}
-
+/* 
+label {
+  display: block;
+  margin-bottom: 10px;
+} */
 
 label {
-    display: block;
-    margin-bottom: 10px;
+  margin-bottom: .2rem;
+  position: relative;
 }
 
-input{
-    padding: 10px;
-    border: 1px solid white;
-    background: white;
-    cursor: pointer;
-    border-radius: 8px;
+label:not(:first-of-type){
+  margin-top: 1rem;
+} 
+
+nav {
+  justify-items: center;
 }
 
-
-
-button{
-    background: black;
-    color: white;
-    margin: 95px;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 4px;
-    text-align: center;
-
+input {
+  padding: 10px;
+  border: 1px solid white;
+  background: white;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-    margin: 50px;
+button {
+  background: #a20d0d;
+  color: white;
+  margin: 10px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
 }
 
+button:hover {
+  background-color: #45a049;
+}
 
+a {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  display: block;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  position: center;
+}
 
+a:hover {
+  color: #776f6f;
+}
 
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #DFDFDF;
+  font-size: .65rem;
+  padding: .2rem .3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: white;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: block;
+}
+
+.helper-text {
+  display: blo;
+  font-size: .8rem;
+  color:white;
+}
+
+label {
+  margin-bottom: .2rem;
+  position: relative;
+}
+
+label:not(:first-of-type){
+  margin-top: 1rem;
+}

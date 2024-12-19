@@ -23,3 +23,12 @@ function confirmAge(isOfAge) {
 
 // Verifica a idade ao carregar a página
 window.onload = checkAgeVerification;
+
+
+   // Exibe ou oculta o menu de opções ao clicar no botão "Entrar"
+   document.getElementById('entrarBtn').addEventListener('click', function() {
+    const menu = document.getElementById('opcoesMenu');
+    menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+});
+
+
