@@ -1,4 +1,17 @@
-let produtos = JSON.parse(localStorage.getItem("carrinho")) || [];
+let produtos = [];
+
+const carrinhoSalvo = localStorage.getItem("carrinho");
+
+if (carrinhoSalvo) {
+  try {
+    produtos = JSON.parse(carrinhoSalvo) || [];
+  } catch (e) {
+    console.error("Erro ao carregar o carrinho:", e);
+    produtos = [];
+  }
+} else {
+  produtos = [];
+}
 
 const botaoAdd = document.querySelectorAll(".add-produto");
 
@@ -20,6 +33,7 @@ botaoAdd.forEach((button) => {
     });
 
     localStorage.setItem("carrinho", JSON.stringify(produtos));
+    alert("Produto adicionado ao carrinho.")
     console.log(localStorage.carrinho);
   });
 });
