@@ -9,7 +9,7 @@
 body {
   /* background-color: #993b3b; */
   height: 100vh; /* Para garantir que ocupe toda a altura da tela */
-  background: linear-gradient(to bottom, #993b3b 29.9%, aliceblue 0%);
+  background: linear-gradient(to bottom, #993b3b 28.1%, aliceblue 0%);
 }
 
 a body {
@@ -31,7 +31,7 @@ header button {
 
 header #logo {
   position: absolute;
-  top: 55px; /* Distância do topo */
+  top: 54px; /* Distância do topo */
   left: 100px; /* Distância da esquerda */
   width: 400px; /* Largura do logo */
   height: auto; /* Manter a proporção do logo */
@@ -50,6 +50,7 @@ img {
 nav {
   gap: 10%;
   display: flex;
+  font-size: 18px;
   justify-content: center;
   background-color: #5b0505;
   padding: 35px;
@@ -209,7 +210,7 @@ h2 #img_des {
   width: 250px;
   padding: 10px;
   top: 0;
-  margin-top: 46.6%;
+  margin-top: 46.7%;
   background-color: #993b3b;
   transition: all 0.5s ease-in-out;
 }
@@ -321,14 +322,27 @@ footer div h2 {
   color: white;
 }
 
-div#copyright.clr {
+div#copyright {
   font-size: 11px;
   margin-left: 16.2%;
-  width: 72.3%;
-
+  width: 72.6%;
   display: block;
   color: white;
   background-color: #5b0505;
+}
+
+div#copyright p {
+  width: 72.3%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+div#copyright p#version {
+  font-size: 10px;
+  
+
 }
 
 p#footer {
@@ -338,7 +352,7 @@ p#footer {
   margin-left: 16.2%;
   margin-top: 10px;
   width: 52.5%;
-  background-color: #954646;
+  background-color: #993b3b;
 }
 
 a.item:hover {
@@ -448,3 +462,6 @@ label {
     display: flex;
   }
 }
+
+
+

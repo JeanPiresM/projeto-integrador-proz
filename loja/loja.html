@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loja de Vinhos</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/loja.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header>
       <div>
         <img src="img/Rectangle 1.png" alt="Imagem de Vinho" />
         <img id="logo" src="img/Logo_1610.png 2.png" alt="Logo" />
-       
+
         <nav class="Menu">
           <li><a href="/home/home.html">HOME</a></li>
           <li><a href="/vinhos/vinhos.html">VINHOS</a></li>
           <li><a href="/loja/loja.html">LOJA</a></li>
           <li><a href="/eventos/eventos.html">EVENTOS</a></li>
           <li><a href="/contato/contato.html">CONTATO</a></li>
-        
         </nav>
         <a href="/carrinho_compra/index.html">
           <button class="car_button">🛒</button>
         </a>
-        
       </div>
     </header>
 
@@ -137,16 +137,16 @@
         <div class="produto">
           <img
             class="divina_home"
-            src="img/Vega_Silicia_0510 2.png"
+            src="img/divina_home_1.png"
             alt="Vinho tinto"
           />
           <h3>DIVINA TAÇA</h3>
-          <p><strong>VINHO TINTO</strong></p>
+          <p class="infoNome"><strong>VINHO TINTO</strong></p>
           <p>
             <br />
-            Preço:<strong>R$ 129,90</strong>
+            Preço:<strong class="infoPreco">129,90</strong>
           </p>
-          <button>Adicionar ao Carrinho</button>
+          <button class="add-produto">Adicionar ao Carrinho</button>
           <button>Leia Mais</button>
         </div>
         <div class="produto">
@@ -156,12 +156,12 @@
             alt="Vinho tinto"
           />
           <h3>DIVINA TAÇA</h3>
-          <p><strong>VINHO SUAVE</strong></p>
+          <p class="infoNome"><strong>VINHO SUAVE</strong></p>
           <p>
             <br />
-            Preço:<strong>R$ 129,90</strong>
+            Preço:<strong class="infoPreco">129,90</strong>
           </p>
-          <button>Adicionar ao Carrinho</button>
+          <button class="add-produto">Adicionar ao Carrinho</button>
           <button>Leia Mais</button>
         </div>
         <div class="produto">
@@ -171,51 +171,75 @@
             alt="Vinho tinto"
           />
           <h3>DIVINA TAÇA</h3>
-          <p>
-            <strong>VINHO SECO</strong> <br />
-            Preço:<strong>R$ 129,90</strong>
+          <p class="infoNome">
+            <strong>VINHO SECO</strong>
           </p>
-          <button>Adicionar ao Carrinho</button>
+          <p>
+            <br />
+            Preço:<strong class="infoPreco">129,90</strong>
+          </p>
+          <button class="add-produto">Adicionar ao Carrinho</button>
           <button>Leia Mais</button>
         </div>
         <div class="produto">
           <img
             class="divina_home"
-            src="img/Vega_Silicia_0510 1.png"
-            alt="Vinho tinto" />
+            src="img/divina_home.png"
+            alt="Vinho tinto"
+          />
 
-          <h3>Vinho Branco 1</h3>
-          <p>Descrição do produto 4.</p>
-          <button>Adicionar ao Carrinho</button>
+          <h3>DIVINA TAÇA</h3>
+          <p class="infoNome">
+            <strong>VINHO SECO</strong>
+          </p>
+          <p>
+            <br />
+            Preço:<strong class="infoPreco">129,90</strong>
+          </p>
+          <button class="add-produto">Adicionar ao Carrinho</button>
           <button>Leia Mais</button>
         </div>
         <div class="produto">
           <img
             class="divina_home"
-            src="img/Maleza_0510.png"
+            src="img/divina_home_1.png"
             alt="Vinho tinto"
           />
-          <h3>Vinho Branco 2</h3>
-          <p>Descrição do produto 5.</p>
-          <button>Adicionar ao Carrinho</button>
+          <h3>DIVINA TAÇA</h3>
+          <p class="infoNome">
+            <strong>VINHO SECO</strong>
+          </p>
+          <p>
+            <br />
+            Preço:<strong class="infoPreco">129,90</strong>
+          </p>
+          <button class="add-produto">Adicionar ao Carrinho</button>
           <button>Leia Mais</button>
         </div>
         <div class="produto">
           <img
             class="divina_home"
-            src="img/Catena_zapata_2_0510 2.png"
+            src="img/divina_home.png"
             alt="Vinho tinto"
           />
-          <h3>Vinho Rosé 1</h3>
-          <p>Descrição do produto 6.</p>
-          <button>Adicionar ao Carrinho</button>
+          <h3>DIVINA TAÇA</h3>
+          <p class="infoNome">
+            <strong>VINHO SECO</strong>
+          </p>
+          <p>
+            <br />
+            Preço:<strong class="infoPreco">129,90</strong>
+          </p>
+          <button class="add-produto">Adicionar ao Carrinho</button>
           <button>Leia Mais</button>
         </div>
       </div>
     </main>
 
     <footer>
-      <p>&copy; 2024 Vinhos. Todos os direitos reservados.</p>
+      <div id="copyright">
+        <p>&copy; 2025 Divina Taça. Todos os direitos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>

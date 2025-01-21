@@ -44,7 +44,7 @@ for (let i = 0; i < arrayEventos.length; i++) {
         </div>
         <span><strong>${arrayEventos[i].localEvento}</strong></span>
         <span><strong>${arrayEventos[i].dataEvento}</strong></span>
-        <a href=${arrayEventos[i].linkEvento}>Saiba Mais &#8594;</a>
+        <a href=${arrayEventos[i].linkEvento} target="_blank">Saiba Mais &#8594;</a>
   `;
 
   const section = document.querySelector("section");

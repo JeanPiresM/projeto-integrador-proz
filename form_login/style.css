@@ -36,7 +36,7 @@ img {
 }
 
 form#login {
-  display: grid;
+  display: flex;
   position: center;
   flex-direction: column;
   justify-content: center;
@@ -55,13 +55,13 @@ label {
 } */
 
 label {
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
   position: relative;
 }
 
-label:not(:first-of-type){
+label:not(:first-of-type) {
   margin-top: 1rem;
-} 
+}
 
 nav {
   justify-items: center;
@@ -109,9 +109,9 @@ a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  color: #DFDFDF;
-  font-size: .65rem;
-  padding: .2rem .3rem;
+  color: #dfdfdf;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
   width: auto;
   display: block;
   background-color: #202020;
@@ -119,31 +119,31 @@ a:hover {
 
 input.error {
   border: solid 2px #992020;
-  background-color: #CCBBBB;
+  background-color: #ccbbbb;
   color: white;
 }
 
 input.correct {
-  background-color: #BBCCBB;
+  background-color: #bbccbb;
   border: solid 2px #206620;
   color: #206620;
 }
 
-.visible {
-  display: block;
-}
-
 .helper-text {
-  display: blo;
-  font-size: .8rem;
-  color:white;
+  display: none;
+  font-size: 0.8rem;
+  color: white;
 }
 
 label {
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
   position: relative;
 }
 
-label:not(:first-of-type){
+label:not(:first-of-type) {
   margin-top: 1rem;
+}
+
+.visible {
+  display: block;
 }
